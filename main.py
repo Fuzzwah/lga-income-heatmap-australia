@@ -773,9 +773,9 @@ def main():
     artifact = annotate_svg_and_write(soup, matched_by_code, name_matches, fuzzy_unmatched, tbl, breaks, colors_hex, args.out_svg, png_path)
 
     # print brief summary
-    outputs_line = f"SVG: {args.out_svg}, JSON: {args.out_json}"
+    outputs_line = f"\nSVG: {args.out_svg}\nJSON: {args.out_json}"
     if png_path:
-        outputs_line += f", PNG: {png_path}"
+        outputs_line += f"\nPNG: {png_path}"
     print("Outputs ->", outputs_line)
     print(
         "Counts -> exact matches:{exact} | fuzzy matches:{fuzzy} | unmatched shapes:{unmatched}".format(
