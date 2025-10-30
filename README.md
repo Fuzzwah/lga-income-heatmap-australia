@@ -4,7 +4,7 @@ Generate an SVG choropleth of Australian local government areas (LGAs) coloured
 by median personal income. The project combines ABS earnings data with an LGA
 boundary map to produce a shareable visual and a machine-readable mapping file.
 
-> Note: Generated artifacts (SVG/PNG/JSON) are not checked into this repository. Run the generator locally whenever you need fresh outputs.
+> Note: The PNG preview is committed for convenience; regenerate the SVG and JSON locally as needed.
 
 ![Australian LGA median income heatmap](australia_lga_median_income_heatmap.png)
 
@@ -59,7 +59,8 @@ Useful arguments:
   excluded from git history to keep the repository lightweight.
 - `australia_lga_median_income_heatmap.png`: Raster export of the SVG for easy
   embedding in Markdown and other contexts that prefer images over inline SVG.
-  Like the SVG, regenerate this locally before sharing.
+  A current copy is tracked in the repository, but you can regenerate it
+  locally if you customise the map.
 - `lga_median_income_mapping.json`: Companion data export containing summary
   statistics, bin definitions, per-LGA colour assignments, unmatched shapes,
   and recorded source URLs.
